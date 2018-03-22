@@ -1,12 +1,12 @@
 import React from 'react';
-import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheet } from 'styled-components';
 import { AfterRoot, AfterData } from '@jaredpalmer/after';
 
 class Document extends React.Component {
   static async getInitialProps({ assets, data, renderPage }) {
-    const sheet = new ServerStyleSheet()
-    const page = await renderPage(App => props => sheet.collectStyles(<App {...props} />))
-    const styleTags = sheet.getStyleElement()
+    const sheet = new ServerStyleSheet();
+    const page = await renderPage(App => props => sheet.collectStyles(<App {...props} />));
+    const styleTags = sheet.getStyleElement();
     return { assets, data, ...page, styleTags};
   }
   
@@ -18,29 +18,29 @@ class Document extends React.Component {
     
     return (
       <html {...htmlAttrs}>
-      <head>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {helmet.title.toComponent()}
-        {helmet.meta.toComponent()}
-        {helmet.link.toComponent()}
-        {assets.client.css && (
-          <link rel="stylesheet" href={assets.client.css} />
-        )}
-        {/** here is where we put our Styled Components styleTags... */}
-        {styleTags}
-      </head>
-      <body {...bodyAttrs}>
-      <AfterRoot />
-      <AfterData data={data}/>
-      <script
-        type="text/javascript"
-        src={assets.client.js}
-        defer
-        crossOrigin="anonymous"
-      />
-      </body>
+        <head>
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          {helmet.title.toComponent()}
+          {helmet.meta.toComponent()}
+          {helmet.link.toComponent()}
+          {assets.client.css && (
+            <link rel="stylesheet" href={assets.client.css} />
+          )}
+          {/** here is where we put our Styled Components styleTags... */}
+          {styleTags}
+        </head>
+        <body {...bodyAttrs}>
+          <AfterRoot />
+          <AfterData data={data}/>
+          <script
+            type="text/javascript"
+            src={assets.client.js}
+            defer
+            crossOrigin="anonymous"
+          />
+        </body>
       </html>
     );
   }
