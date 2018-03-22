@@ -1,6 +1,6 @@
 # After.js Boilerplate
 
-A boilerplate project build on [after.js](https://github.com/jaredpalmer/after.js).
+A boilerplate project built on [after.js](https://github.com/jaredpalmer/after.js).
 
 Done:
 
