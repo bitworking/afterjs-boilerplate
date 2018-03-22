@@ -6,16 +6,14 @@ Done:
 
 - Linting
 - Styled components
-- Better folder structure
+- Atomic Generator
+- Flow
 
 Todo:
 
 - prettier
 - Styleguide/Pattern Library
-- Atomic Design Generator
 - PWA functionalities (Service Worker with Offline Caching, manifest.json etc.)
-
-
 
 ## How to use
 

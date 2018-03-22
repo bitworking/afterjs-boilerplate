@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders default HomeTemplate snapshot 1`] = `
+.c1 {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.c1 img {
+  -webkit-animation: logo-spin infinite 20s linear;
+  animation: logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.c0 {
+  text-align: center;
+}
+
+.c2 {
+  font-size: large;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt="logo"
+      src="react.svg"
+    />
+    <h2>
+      Welcome to After.js
+    </h2>
+  </div>
+  <p
+    className="c2"
+  >
+    To get started, edit 
+    <code>
+      src/Home.js
+    </code>
+     or
+     
+    <code>
+      src/About.js
+    </code>
+    and save to reload.
+  </p>
+  <a
+    href="/about"
+    onClick={[Function]}
+  >
+    About
+  </a>
+</div>
+`;

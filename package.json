@@ -6,7 +6,11 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "cross-env NODE_ENV=production node build/server.js"
+    "start:prod": "cross-env NODE_ENV=production node build/server.js",
+    "atomic": "atomic-scripts"
+  },
+  "atomic-scripts": {
+    "componentsDir": "src/components/atomic/"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
@@ -19,6 +23,7 @@
     "styled-components": "^3.2.3"
   },
   "devDependencies": {
+    "atomic-scripts": "^2.1.2",
     "babel-eslint": "^8.2.2",
     "cross-env": "^5.1.4",
     "eslint": "^4.19.1",
@@ -27,6 +32,9 @@
     "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "eslint-plugin-relay": "^0.0.21"
+    "eslint-plugin-relay": "^0.0.21",
+    "flow-bin": "^0.68.0",
+    "jest-styled-components": "^5.0.0",
+    "react-test-renderer": "^16.2.0"
   }
 }
