@@ -1,21 +1,41 @@
-# Razzle x After.js
+# After.js Boilerplate
+
+A boilerplate project build on [after.js](https://github.com/jaredpalmer/after.js).
+
+Done:
+
+- Linting
+- Styled components
+- Better folder structure
+
+Todo:
+
+- prettier
+- Styleguide/Pattern Library
+- Atomic Design Generator
+- PWA functionalities (Service Worker with Offline Caching, manifest.json etc.)
+
+
 
 ## How to use
 
-Download the example [or clone the whole project](https://github.com/jaredpalmer/razzle.git):
+Install it:
 
 ```bash
-curl https://codeload.github.com/jaredpalmer/razzle/tar.gz/master | tar -xz --strip=2 razzle-master/examples/with-afterjs
-cd with-afterjs
+git clone https://github.com/bitworking/afterjs-boilerplate.git
+cd afterjs-boilerplate
+yarn install
 ```
 
-Install it and run:
+Run dev server:
 
 ```bash
-yarn install
 yarn start
 ```
 
-## Idea behind the example
+Build and run it:
 
-This is a basic, bare-bones example of how to use After.js and Razzle.
+```bash
+yarn build
+yarn start:prod
+```
